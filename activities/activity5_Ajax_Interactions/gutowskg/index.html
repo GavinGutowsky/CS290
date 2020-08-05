@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css"  type="text/css">
+    <script src="script.js"></script>
+    <title>Gavin - Activity 5: Ajax Interactions</title>
+  </head>
+
+  <body>
+    <form>
+       <fieldset>
+            <legend>Open Weather Map - Information Request</legend>
+            <fieldset>
+                 <label>
+                      Country Code:
+                      <input type="text" id="country code" name="country code" size="30" maxlength="100">
+                 </label>
+            </fieldset>
+            <fieldset>
+                 <label>
+                      Get weather by zip code:
+                      <input type="text" id="zip code" name="zip code" size="30" maxlength="100">
+                      <input id="zipSubmit" type="submit"/>
+                 </label>
+            </fieldset>
+            <fieldset>
+                 <label>
+                      Get weather by city name:
+                      <input type="text" id="city id" name="city id" size="30" maxlength="100">
+                      <input id="citySubmit" type="submit"/>
+                 </label>
+            </fieldset>
+       </fieldset>
+    </form>
+
+    <div>
+      <span id="weather"></span>
+    </div>
+
+    <form>
+         <fieldset>
+              <legend>JSON query</legend>
+              <fieldset>
+                <label>
+                  Text entry
+                  <input type="text" id="entry" name="entry" size="30" maxlength="100">
+                  <input id="request" type="submit" value="Request"/>
+                </label>
+              </fieldset>
+         </fieldset>
+    </form>
+
+    <div>
+      <span id="result"></span>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,5 @@
+fieldset {margin: 10px 0 10px 0;}
+
+label {display: block;}
+
+input~text {width: 20px;}
