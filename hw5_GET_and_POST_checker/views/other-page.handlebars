@@ -1,0 +1,21 @@
+<h1>POST Request Recieved</h1>
+
+<table>
+	<caption>URL query string</caption>
+	{{#each param}}
+	<tr>
+		<td>{{this.name}}</td>
+		<td>{{this.value}}</td>
+	</tr>
+	{{/each}}
+</table>
+
+<table>
+	<caption>JSON data</caption>
+	{{#each param2}}
+	<tr>
+		<td>{{this.name}}</td>
+		<td>{{this.value}}</td>
+	</tr>
+	{{/each}}
+</table>
