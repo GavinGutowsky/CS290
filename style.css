@@ -1,0 +1,57 @@
+p {
+     margin: 0 0 9px;
+     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+     font-size: 13px;
+     line-height: 18px;
+}
+
+table {
+     border: 1px solid black;
+}
+
+th {
+     border: 1px solid black;
+     text-align: center;
+     width: 80px;
+}
+
+td {
+     border: 1px solid black;
+     text-align: left;
+     width: 80px;
+}
+
+.first_column {
+     font-weight: 100;
+     font-style: italic;
+}
+
+.outer-content {
+     width: 75%;
+     padding: 15px;
+     margin-top: 20px;
+     background-color: hotpink;
+}
+
+.inner-content {
+     width: 75%;
+     margin: auto;
+     text-align: center;
+     background-color: dodgerblue;
+}
+
+fieldset {
+     margin: 10px 0 10px 0;
+}
+
+label {
+     display: block;
+}
+
+.option {
+     margin: 0 0 20px 0;
+}
+
+input~text {
+     width: 20px;
+}
