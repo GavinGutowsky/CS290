@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Final Project</title>
+    <meta name="author" content="Gavin Gutowsky">
+    <meta name="description" content="CS290 Final Project Webpage">
+
+    <!-- Bootstrap CSS, jQuery, and JS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js"></script>
+  </head>
+
+  <body>
+
+    <header>
+      <h1>Dex's Diner</h1>
+      <h2>CoCo Town's best grub</h2>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="order.html" class="current">Order</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </nav>
+
+    <h3>Order Form</h3>
+
+    <div class="section">
+      <p>Menu Options:</p>
+      <button onclick="reveal('breakfast_options');">Breakfast</button>
+      <button onclick="reveal('lunch_options');">Lunch</button>
+      <button onclick="reveal('dinner_options');">Dinner</button>
+    </div>
+
+    <div class="section">
+      <form target="_blank" action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="get">
+
+        <fieldset id="breakfast_options">
+             <label>Breakfast Items:</label><br>
+
+               <input type="checkbox" name="omelet" id="omelet" value="omelet">
+               <label for="omelet">Omelet</label><br>
+
+               <input type="checkbox" name="blue milk" id="blue milk" value="blue milk">
+               <label for="blue milk">Blue milk</label><br>
+
+               <input type="checkbox" name="womp rat" id="womp rat" value="womp rat">
+               <label for="womp rat">Womp rat</label><br>
+
+        </fieldset><br>
+
+        <fieldset id="lunch_options">
+             <label>Lunch Items:</label><br>
+
+               <input type="checkbox" name="sandwich" id="sandwich" value="sandwich">
+               <label for="sandwich">Sandwich</label><br>
+
+               <input type="checkbox" name="nerf steak" id="nerf steak" value="nerf steak">
+               <label for="nerf steak">Nerf steak</label><br>
+
+               <input type="checkbox" name="pickle" id="pickle" value="pickle">
+               <label for="pickle">Pickled Gartro Eggs</label><br>
+
+        </fieldset><br>
+
+        <fieldset id="dinner_options">
+             <label>Dinner Items:</label><br>
+
+               <input type="checkbox" name="juice" id="juice" value="juice">
+               <label for="juice">Juri juice</label><br>
+
+               <input type="checkbox" name="protato" id="protato" value="protato">
+               <label for="protato">Protato wedges</label><br>
+
+               <input type="checkbox" name="chowder" id="chowder" value="chowder">
+               <label for="chowder">Nyork chowder</label><br>
+
+        </fieldset><br>
+
+        <fieldset>
+            <label>Name on order:</label>
+            <input type="text" id="name" name="name" size="30" maxlength="100">
+        </fieldset><br>
+
+        <input type="submit" value="submit">
+
+      </form>
+    </div>
+
+  </body>
+
+  <footer><a class="source" target="_blank" href="https://starwars.fandom.com/wiki/Hyperspace/Legends">Background image source: Wookiepedia<a></footer>
+
+</html>
