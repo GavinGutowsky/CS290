@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html language="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width", initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <title>HW6 - gutowskg</title>
+</head>
+
+<body>
+
+  <h1>Add Workout</h1>
+  <form>
+    <label for"name">Name:</label>
+    <input id="name" type="text" name="name" size="30" maxlength="100" required>
+    <label for="reps">Reps:</label>
+    <input id="reps" type="number" name="reps" size="30" maxlength="100" required>
+    <label for="weight">Weight:</label>
+    <input id="weight" type="number" name="weight" size="30" maxlength="100" required>
+    <label for="unit">Units:</label>
+    <select id="unit" name="unit" required>
+      <option value=0>pounds (lb)</option>
+      <option value=1>kilograms (kg)</option>
+    </select>
+    <label for"date">Date:</label>
+    <input id="date" type="date" name="date" size="30" maxlength="100" required>
+    <input id="submit" type="submit" value="submit"/>
+  </form>
+
+  <h1>Workouts Table</h1>
+  <table id="workouts">
+    <thead>
+      <tr>
+        <th>name</th>
+        <th>reps</th>
+        <th>weight</th>
+        <th>unit</th>
+        <th>date</th>
+        <th>delete button</th>
+      </tr>
+    </thead>
+    <tbody id="content">
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
